@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(157, 113, 113);
+}
+
+.box{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: aqua;
+    color: black;
+    height: 300px;
+    width: 900px;
+    border: 2px solid violet;
+    border-radius: 15px;
+    margin-bottom: 200px;
+}
+
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.quote-area{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#quote{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.speaker{
+    display: flex;
+    justify-content: center;
+}
+
+.quoteButton{
+    display: flex;
+    justify-content: center;
+}
+
+#btn{
+    background-color: greenyellow;
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    border: 1px solid yellowgreen;
+    box-shadow: 0 0 4px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn:hover{
+    transform: translate3d(0px, -3px, 0px);
+    background-color: bisque;
+}
+
+@media(orientation: portrait){
+    .box{
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 400px;
+    }
+    .quote-area h1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #quote{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
